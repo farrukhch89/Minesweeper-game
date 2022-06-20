@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="18dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="18dp"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/num_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/number_mines_marked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:text="Number of mines marked: "/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:layout_weight="1"/>
+
+        <ToggleButton
+            android:id="@+id/marking_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textOff="Flag Mode"
+            android:textOn="Marking Mode"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <farrukh.example.minesweeper.MineCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/board_custom_view"
+        android:padding="2dp"
+        />
+
+
+</LinearLayout>
